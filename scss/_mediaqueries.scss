@@ -1,0 +1,231 @@
+/* Ipad _______________________________________________________________ */
+
+@media screen and (max-width: 870px) {
+
+	#menu {
+		float: right;
+		font-size: 1.7em;
+		color: #fff;
+		line-height: 2.3em;
+		margin: 0;
+		padding: 0;
+	}
+
+	#nav.js {
+		display: none;
+	}
+
+	.header {
+		max-width: 100%;
+		#nav {
+			float: none;
+			clear: both;
+			width: 100%;
+		}
+		ul {
+			width: 100%;
+			margin: 4em 0 0 0;
+		}
+		li {
+			display: block;
+			border-top: 1px solid #2a72a0;
+			padding: .75em 0;
+			margin: 0;
+		}
+		.button {
+			border: none;
+			border-top: 1px solid #2a72a0;
+			border-radius: 0;
+		}
+	}
+
+	.main {
+		padding-top: 100px;
+		clear: both;
+	}
+
+	.post {
+		width: 100%;
+		float: none;
+	}
+
+	.conversation {
+		font-size: 1.875em;
+		padding-left: .5em;
+	}
+
+	.signupLinks {
+		p {
+			font-size: .9em;
+		}
+	}
+
+	#sidebar {
+		width: 80%;
+		padding: 0 10%;
+		.social {
+			text-align: center;
+		}
+		.column1, .column2 {
+			float: left;
+			width: 50%;
+			margin-bottom: 2em;
+		}
+		.also {
+			display: none;
+		}
+		input[type="submit"] {
+			width: 26%;
+		}
+	}
+
+	.mainFooter {
+		width: 100%;
+		ul {
+			width: 33%;
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		.quote {
+			float: left;
+			width: 100%;
+			margin-bottom: 1.5em;
+		}
+	}
+	.top {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 870px) {
+	#menu {
+		display: none;
+	}
+}
+
+/* SMALL RESOLUTIONS ____________________________________________________________________ */
+
+@media screen and (max-width: 600px) {
+.container {
+	width: 85%;
+}
+
+h1 {
+	font-size: 2.25em;
+}
+
+h2, h3, h4 {
+	font-size: 1.75em;
+	margin-top: 1.2em;
+}
+
+.post {
+	h1 {
+		padding-bottom: .2em;
+	}
+	.share {
+		float: left;
+	}
+	img {
+		margin: .5em 0;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		overflow: hidden;
+		vertical-align:bottom;
+	}
+}
+
+.author {
+	img {
+		margin-right: 1em;
+	}
+}
+
+.conversation {
+	font-size: 1.5em;
+	padding-left: .5em;
+}
+
+table {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.signup {
+	margin: 1em auto;
+	padding: 1em;
+	.signupLinks {
+		padding: 0;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	.man, .woman, .fitpro {
+		width: 100%;
+		margin: .5em 0;
+	}
+	img {
+		display: none;
+	}
+}
+
+#sidebar {
+	width: 80%;
+	padding: 0 10%;
+	.also {
+		margin-bottom: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	li {
+		font-size: .9em;
+	}
+	.column1, .column2 {
+		width: 100%;
+		margin: 0;
+	}
+	.column2 {
+		margin-bottom: 2em;
+	}
+	input[type="submit"] {
+		width: 22%;
+	}
+}
+
+.mainFooter {
+	padding: 3em 0 1em 0;
+	.links {
+		width: 95%;
+		margin: 0 auto;
+	}
+	ul {
+  margin-right: 0;
+  width: 100%;
+	}
+	li {
+		margin-right: 2em;
+	}
+	.listHighlight {
+		margin: 1.3em 0 .7em 0;
+	}
+	.quote {
+		width: 100%;
+		font-size: 1em;
+		margin-bottom: 0;
+		a {
+			color: $mainBlue;
+		}
+	}
+
+.copyright {
+	padding-top: 2em;
+	font-size: .7em;
+		}
+	}
+}
