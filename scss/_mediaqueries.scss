@@ -1,3 +1,17 @@
+@media screen and (max-width: 1150px) {
+	.container {
+		width: 90%;
+	}
+	.mainFooter {
+		.links {
+			width: 75%;
+		}
+		.quote {
+			width: 24%;
+		}
+	}
+}
+
 /* Ipad _______________________________________________________________ */
 
 @media screen and (max-width: 870px) {
@@ -81,11 +95,18 @@
 
 	.mainFooter {
 		width: 100%;
-		ul {
-			width: 33%;
-			margin: 0;
-			padding: 0;
+		.links {
+			width: 100%;
+			padding: 0 8%;
+			ul {
+				margin-right: 4%;
+			}
 		}
+		// ul {
+		// 	width: 33%;
+		// 	margin: 0;
+		// 	padding: 0;
+		// }
 		li {
 			margin: 0;
 			padding: 0;

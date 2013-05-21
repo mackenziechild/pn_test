@@ -40,6 +40,37 @@ $(".man, .woman, .fitpro").click(function(e) {
 	}
 });
 
+$("#freeCourse").on('submit', function(e){
+	e.preventDefault;
+	
+	var that = $(this),
+			url = that.attr('action'),
+			type = that.attr('method'),
+			data = {};
+
+	that.find('[name]').each(function(index, value) {
+		var that = $(this),
+				name = that.attr('name'),
+				value = that.val();
+
+		data[name] = value;
+	});
+
+	$.ajax({
+			url: url,
+			type: type,
+			data: data,
+			success: function() {
+				$('#signupForm').html("<div id='message'></div>");  
+		    $('#message').html("<h2>You my friend, are awesome!</h2>")  
+		    .append("<p>Thanks for signing up!</p>")  
+		    .hide()  
+			}
+	});
+
+	return false;
+});
+
 $("#nav").addClass("js");
 $("#nav").addClass("js").before('<div id="menu"><i class="icon-reorder"></i></div>');
 $("#menu").click(function(){
