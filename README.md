@@ -6,4 +6,4 @@ http://www.precisionnutrition.com/all-about-potatoes
 
 Responsive redesign -
 
-roundtwo.pnhire.me
+http://www.roundtwo.pnhire.me
