@@ -25,6 +25,7 @@ $('.showReferences').click(function(e) {
   $('.showReferences').fadeOut(500)
 });
 
+
 // Sign up form slide in upon click. 
 var signupVisible = 0;
 $(".man, .woman, .fitpro").click(function(e) {
@@ -39,6 +40,8 @@ $(".man, .woman, .fitpro").click(function(e) {
 		$(".select").fadeIn(500);
 	}
 });
+
+// Attempt at submitting the form through ajax
 
 $("#freeCourse").on('submit', function(e){
 	e.preventDefault;
@@ -71,6 +74,8 @@ $("#freeCourse").on('submit', function(e){
 	return false;
 });
 
+// Changes navigation upon resize below 800px to list icon with dropdown menu.
+
 $("#nav").addClass("js");
 $("#nav").addClass("js").before('<div id="menu"><i class="icon-reorder"></i></div>');
 $("#menu").click(function(){
@@ -81,5 +86,7 @@ $(window).resize(function(){
 		$("#nav").removeAttr("style");
 	}
 });
+
+// Responsive videos
 
 $("#video").fitVids();

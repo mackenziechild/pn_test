@@ -354,6 +354,9 @@ a:hover {
 			color: $darkBlue;
 		}
 	}
+	img {
+		margin-top: 1em;
+	}
 	.social {
 		font-size: 1em;
 		margin: 1em auto 0 auto;
@@ -370,10 +373,10 @@ a:hover {
 		}
 	}
 	input[type="search"] {
-		width: 65%;
+		width: 58%;
 	}
 	input[type="submit"] {
-		width: 25%;
+		width: 23%;
 	}
 }
 
@@ -465,12 +468,6 @@ table {
 			float: left;
 		}
 	}
-	// ul {
-	// 	list-style: none;
-	//   float: left;
-	//   line-height: 1.5em;
-	//   margin-right: 1.8em;
-	// }
 	li {
 		margin-right: 1.5em;
 	}
