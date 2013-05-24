@@ -70,7 +70,7 @@ img, object {
 // Typography ------------------------------------------------------->
 
 h1, h2, h3, h4, h5, h6, p, a, ul, li, th, td, label {
-	font-family: "museo", "proxima-nova", "helvetica", sans-serif;
+	font-family: "museo", "proxima-nova", Helvetica, sans-serif;
 	font-weight: 100;
 }
 
@@ -146,20 +146,20 @@ a:hover {
 .button {
 	display: inline-block;
 	background: none;
-	border: 1px solid #fff;
+	border: 1px solid #2a72a0;
 	padding: 7px 12px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	color: #fff;
+	color: #2a72a0;
+	text-shadow: 0px 1px 0px #94d6ff;
 	margin-right: 0;
-	text-shadow: none;
 	a {
 		text-decoration: none;
 	}
 	&:hover {
-		border: 1px solid $darkBlue;
-		color: $darkBlue;
-		text-shadow: 0px 1px 0px #94d6ff;
+		border: 1px solid #fff;
+		color: #fff;
+		text-shadow: none;
 	}
 }
 
@@ -327,7 +327,6 @@ a:hover {
 
 .conversation {
 	border-left: 15px solid $mainBlue;
-	// padding: 7px;
 	font-size: 2em;
 	padding-left: 1em;
 	p {
@@ -362,7 +361,7 @@ a:hover {
 		margin: 1em auto 0 auto;
 		a {
 			color: $darkBlue;
-			&:hover {
+			&:hover, &:active, &:focus {
 				color: $mainBlue;
 			}
 		}
@@ -440,7 +439,7 @@ table {
 		border: 1px solid $grey;
 	}
 	th, td {
-		padding: 5px 15px;
+		padding: .4em 1em;
 		border: 1px solid $grey;
 	}
 	.center {

@@ -42,13 +42,13 @@
 		}
 		li {
 			display: block;
-			border-top: 1px solid #2a72a0;
+			border-top: 1px solid #93d3f7;
 			padding: .75em 0;
 			margin: 0;
 		}
 		.button {
 			border: none;
-			border-top: 1px solid #2a72a0;
+			border-top: 1px solid #93d3f7;
 			border-radius: 0;
 		}
 	}
@@ -68,28 +68,33 @@
 		padding-left: .5em;
 	}
 
-	.signupLinks {
-		p {
-			font-size: .9em;
+	.signup {
+		margin-bottom: 3em;
+		.signupLinks {
+			p {
+				font-size: .9em;
+			}
 		}
 	}
 
 	#sidebar {
-		width: 80%;
-		padding: 0 10%;
+		width: 90%;
+		padding: 2em 5% 0 5%;
+		border-top: 1px solid $grey;
 		.social {
-			text-align: center;
+			font-size: 2em;
+			margin-top: 0;
 		}
 		.column1, .column2 {
 			float: left;
-			width: 50%;
+			width: 45%;
 			margin-bottom: 2em;
 		}
 		.also {
 			display: none;
 		}
 		input[type="submit"] {
-			width: 26%;
+			width: 27%;
 		}
 	}
 
@@ -97,16 +102,11 @@
 		width: 100%;
 		.links {
 			width: 100%;
-			padding: 0 8%;
+			padding: 0;
 			ul {
 				margin-right: 4%;
 			}
 		}
-		// ul {
-		// 	width: 33%;
-		// 	margin: 0;
-		// 	padding: 0;
-		// }
 		li {
 			margin: 0;
 			padding: 0;
@@ -132,7 +132,7 @@
 
 @media screen and (max-width: 600px) {
 .container {
-	width: 85%;
+	width: 90%;
 }
 
 h1 {
@@ -140,8 +140,12 @@ h1 {
 }
 
 h2, h3, h4 {
-	font-size: 1.75em;
-	margin-top: 1.2em;
+	font-size: 1.6em;
+	margin-top: 1em;
+}
+
+p {
+	margin: 1em 0;
 }
 
 .post {
@@ -159,9 +163,13 @@ h2, h3, h4 {
 		overflow: hidden;
 		vertical-align:bottom;
 	}
+	ul {
+		margin: 1.5em 0;
+	}
 }
 
 .author {
+	padding: 1em;
 	img {
 		margin-right: 1em;
 	}
@@ -173,12 +181,14 @@ h2, h3, h4 {
 }
 
 table {
-	width: 90%;
-	margin: 0 auto;
+	th, td {
+		padding: .25em .5em;
+		border: 1px solid $grey;
+	}
 }
 
 .signup {
-	margin: 1em auto;
+	margin: 3em auto;
 	padding: 1em;
 	.signupLinks {
 		padding: 0;
@@ -196,8 +206,6 @@ table {
 }
 
 #sidebar {
-	width: 80%;
-	padding: 0 10%;
 	.also {
 		margin-bottom: 2em;
 	}
@@ -206,6 +214,9 @@ table {
 	}
 	li {
 		font-size: .9em;
+	}
+	.social {
+		font-size: 1.4em;
 	}
 	.column1, .column2 {
 		width: 100%;
@@ -222,15 +233,12 @@ table {
 .mainFooter {
 	padding: 3em 0 1em 0;
 	.links {
-		width: 95%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	ul {
   margin-right: 0;
   width: 100%;
-	}
-	li {
-		margin-right: 2em;
 	}
 	.listHighlight {
 		margin: 1.3em 0 .7em 0;
