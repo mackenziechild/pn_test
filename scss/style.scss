@@ -146,20 +146,20 @@ a:hover {
 .button {
 	display: inline-block;
 	background: none;
-	border: 1px solid #2a72a0;
+	border: 1px solid #fff;
 	padding: 7px 12px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
-	color: #2a72a0;
-	text-shadow: 0px 1px 0px #94d6ff;
+	color: #fff;
+	text-shadow: none;
 	margin-right: 0;
 	a {
 		text-decoration: none;
 	}
 	&:hover {
-		border: 1px solid #fff;
-		color: #fff;
-		text-shadow: none;
+		border: 1px solid $darkBlue;
+		color: $darkBlue;
+		text-shadow: 0px 1px 0px #94d6ff;
 	}
 }
 
@@ -261,7 +261,7 @@ a:hover {
 	h2 {
 		margin: 0;
 		font-size: 3em;
-		// color: $darkBlue;
+		font-weight: 500;
 		text-align: center;
 	}
 	p {

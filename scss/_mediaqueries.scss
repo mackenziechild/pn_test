@@ -148,6 +148,25 @@ p {
 	margin: 1em 0;
 }
 
+.header {
+	img, object {
+		width: 150px;
+		padding: 12px 0;
+	}
+	li {
+		padding: .4em 0;
+	}
+}
+
+#menu {
+	font-size: 1.3em;
+	line-height: 2.3em;
+}
+
+.main {
+	padding-top: 75px;
+}
+
 .post {
 	h1 {
 		padding-bottom: .2em;
@@ -164,7 +183,10 @@ p {
 		vertical-align:bottom;
 	}
 	ul {
-		margin: 1.5em 0;
+		margin: 1em 0;
+	}
+	li {
+		padding-left: 0;
 	}
 }
 
