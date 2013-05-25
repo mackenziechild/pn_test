@@ -87,15 +87,18 @@
 		}
 		.column1, .column2 {
 			float: left;
-			width: 45%;
+			width: 50%;
 			margin-bottom: 2em;
 		}
 		.also {
 			display: none;
 		}
-		input[type="submit"] {
-			width: 27%;
-		}
+		input[type="search"] {
+		width: 75%;
+	}
+	input[type="submit"] {
+		width: 20%;
+	}
 	}
 
 	.mainFooter {
@@ -104,6 +107,7 @@
 			width: 100%;
 			padding: 0;
 			ul {
+				width: 28%;
 				margin-right: 4%;
 			}
 		}
@@ -191,6 +195,9 @@ p {
 }
 
 .author {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	padding: 1em;
 	img {
 		margin-right: 1em;
@@ -210,7 +217,10 @@ table {
 }
 
 .signup {
-	margin: 3em auto;
+	margin-bottom: 2.5em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 	padding: 1em;
 	.signupLinks {
 		padding: 0;
@@ -247,20 +257,17 @@ table {
 	.column2 {
 		margin-bottom: 2em;
 	}
-	input[type="submit"] {
-		width: 22%;
-	}
 }
 
 .mainFooter {
-	padding: 3em 0 1em 0;
+	padding: 2em 0 1em 0;
 	.links {
 		width: 100%;
 		margin: 0 auto;
-	}
-	ul {
-  margin-right: 0;
-  width: 100%;
+		ul {
+	  margin-right: 0;
+	  width: 100%;
+		}
 	}
 	.listHighlight {
 		margin: 1.3em 0 .7em 0;
@@ -269,11 +276,7 @@ table {
 		width: 100%;
 		font-size: 1em;
 		margin-bottom: 0;
-		a {
-			color: $mainBlue;
-		}
 	}
-
 .copyright {
 	padding-top: 2em;
 	font-size: .7em;

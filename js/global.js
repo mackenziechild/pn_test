@@ -33,7 +33,7 @@ $(".man, .woman, .fitpro").click(function(e) {
 	if (signupVisible === 0) {
 		$("#signupForm").slideToggle(500);
 		signupVisible = 1;	
-		$(".select, .signupLinks").fadeOut(500);
+		$(".select, .signupLinks, .beforeAfter").fadeOut(500);
 	} else {
 		$("#signupForm").slideToggle(500);
 		signupVisible = 0;
