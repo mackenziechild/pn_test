@@ -197,11 +197,6 @@ a:hover {
 			margin: 0;
 			font-weight: 100;
 		}
-		.share {
-			display: inline-block;
-			float: right;
-			color: $mainBlue;
-		}
 	}
 	ul {
 		margin: 2em 0;
@@ -222,10 +217,25 @@ a:hover {
 	}
 }
 
-// .shareBottom {
-// 	display: inline;
-// 	float: left;
-// }
+.shareBottom {
+	h2 {
+		margin: 0;
+		padding-bottom: .5em;
+		color: $darkBlue;
+		// font-weight: 500;
+		// float: left;
+	}
+	border-top: 1px solid $grey;
+	border-bottom: 1px solid $grey;
+	// -webkit-border-radius: 25px;
+	// -moz-border-radius: 25px;
+	// border-radius: 25px;
+	padding: 1em 0;
+}
+
+#facebook, #twitter, #pinterest, #gplus {
+	display: inline-block;
+}
 
 .author {
 	border: 1px solid $grey;
