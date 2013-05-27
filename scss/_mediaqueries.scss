@@ -61,6 +61,11 @@
 	.post {
 		width: 100%;
 		float: none;
+		img {
+			-webkit-border-radius: 12.5px;
+			-moz-border-radius: 12.5px;
+			border-radius: 12.5px;
+		}
 	}
 
 	.conversation {
@@ -68,8 +73,17 @@
 		padding-left: .5em;
 	}
 
+	.author {
+		-webkit-border-radius: 12.5px;
+		-moz-border-radius: 12.5px;
+		border-radius: 12.5px;
+	}
+
 	.signup {
 		margin-bottom: 3em;
+		-webkit-border-radius: 12.5px;
+			-moz-border-radius: 12.5px;
+			border-radius: 12.5px;
 		.signupLinks {
 			p {
 				font-size: .9em;
@@ -94,11 +108,11 @@
 			display: none;
 		}
 		input[type="search"] {
-		width: 75%;
-	}
-	input[type="submit"] {
-		width: 20%;
-	}
+			width: 75%;
+		}
+		input[type="submit"] {
+			width: 20%;
+		}
 	}
 
 	.mainFooter {
@@ -261,6 +275,9 @@ table {
 
 .mainFooter {
 	padding: 2em 0 1em 0;
+	p {
+		font-weight: 500;
+	}
 	.links {
 		width: 100%;
 		margin: 0 auto;
@@ -268,6 +285,12 @@ table {
 	  margin-right: 0;
 	  width: 100%;
 		}
+	}
+	li {
+		font-weight: 500;
+	}
+	a {
+		font-weight: 500;
 	}
 	.listHighlight {
 		margin: 1.3em 0 .7em 0;
