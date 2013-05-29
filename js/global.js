@@ -41,38 +41,45 @@ $(".man, .woman, .fitpro").click(function(e) {
 	}
 });
 
-// Attempt at submitting the form through ajax
+// Form Submission through Ajax
 
-$("#freeCourse").on('submit', function(e){
-	e.preventDefault;
-	
-	var that = $(this),
-			url = that.attr('action'),
-			type = that.attr('method'),
-			data = {};
+$('#submit').click(function () {        
+      
+  var name = $('input[name=name]');
+  var email = $('input[name=email]');
+  var hire = $('input[name=hire]');
 
-	that.find('[name]').each(function(index, value) {
-		var that = $(this),
-				name = that.attr('name'),
-				value = that.val();
+  if (name.val()=='') {
+      name.addClass('hightlight');
+      return false;
+  } else name.removeClass('hightlight');
+  
+  if (email.val()=='') {
+      email.addClass('hightlight');
+      return false;
+  } else email.removeClass('hightlight');
+  
+  if (hire.val()=='') {
+      hire.addClass('hightlight');
+      return false;
+  } else hire.removeClass('hightlight');
+      
+  var data = 'name=' + name.val() + '&email=' + email.val() + '&hire='
+  + hire.val();
 
-		data[name] = value;
-	});
+  $.ajax({
+      url: "contact.php",    
+      type: "POST",         
+      data: data,        
+      cache: false,
+      success: function (html) {                                 
+        $('#signupForm, .signupHeader').fadeOut('slow');                    
+        $('.done').fadeIn('slow');
+      }     
+  });
+  return false;
+});    
 
-	$.ajax({
-			url: url,
-			type: type,
-			data: data,
-			success: function() {
-				$('#signupForm').html("<div id='message'></div>");  
-		    $('#message').html("<h2>You my friend, are awesome!</h2>")  
-		    .append("<p>Thanks for signing up!</p>")  
-		    .hide()  
-			}
-	});
-
-	return false;
-});
 
 // Changes navigation upon resize below 800px to list icon with dropdown menu.
 

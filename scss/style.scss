@@ -397,7 +397,7 @@ a:hover {
 
 form {
 	padding-top: .75em;
-	width: 100%;
+	max-width: 100%;
 	margin: 0;
 	input[type="search"], input[type="text"], input[type="submit"], input[type="email"] {
 		box-sizing: border-box;
@@ -439,6 +439,13 @@ form {
 		width: 50%;
 		text-align: center;
 		margin-left: 25%;
+	}
+}
+
+.done {
+	display: none;
+	h2 {
+		padding-top: .5em;
 	}
 }
 
